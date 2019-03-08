@@ -1,6 +1,6 @@
 package com.leigq.www.service;
 
-import com.leigq.www.common.Commodity;
+import com.leigq.www.common.entity.Commodity;
 import com.leigq.www.domain.mapper.CommodityMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

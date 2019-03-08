@@ -1,6 +1,6 @@
 package com.leigq.www.controller;
 
-import com.leigq.www.common.CommodityType;
+import com.leigq.www.common.entity.CommodityType;
 import com.leigq.www.service.CommodityTypeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -10,7 +10,7 @@
         <version>2.1.0.RELEASE</version>
         <relativePath/>-->
         <!-- lookup parent from repository -->
-        <groupId>com.leigq</groupId>
+        <groupId>com.leigq.commodity</groupId>
         <artifactId>commodity-parent</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
@@ -34,8 +34,9 @@
             <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
 
+        <!--本项目公共包-->
         <dependency>
-            <groupId>com.leigq</groupId>
+            <groupId>com.leigq.commodity</groupId>
             <artifactId>commodity-common</artifactId>
         </dependency>
     </dependencies>

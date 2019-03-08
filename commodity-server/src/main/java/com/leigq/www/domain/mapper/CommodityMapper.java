@@ -1,6 +1,6 @@
 package com.leigq.www.domain.mapper;
 
-import com.leigq.www.common.Commodity;
+import com.leigq.www.common.entity.Commodity;
 import org.apache.ibatis.annotations.Mapper;
 
 /**

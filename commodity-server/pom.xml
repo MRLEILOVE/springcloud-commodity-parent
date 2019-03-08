@@ -4,12 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <!-- 子模块的parent要使用顶层的父模块-->
     <parent>
-        <!--<groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.0.RELEASE</version>
-        <relativePath/>-->
-        <!-- lookup parent from repository -->
-        <groupId>com.leigq</groupId>
+        <groupId>com.leigq.commodity</groupId>
         <artifactId>commodity-parent</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
@@ -45,13 +40,6 @@
             <scope>runtime</scope>
         </dependency>
 
-        <!--test-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-
         <!-- druid数据库连接池 -->
         <dependency>
             <groupId>com.alibaba</groupId>
@@ -70,20 +58,21 @@
             <artifactId>pagehelper-spring-boot-starter</artifactId>
         </dependency>
 
+        <!--本项目公共包-->
         <dependency>
-            <groupId>com.leigq</groupId>
+            <groupId>com.leigq.commodity</groupId>
             <artifactId>commodity-common</artifactId>
         </dependency>
 
     </dependencies>
 
-    <build>
+    <!--<build>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
-    </build>
+    </build>-->
 
 </project>

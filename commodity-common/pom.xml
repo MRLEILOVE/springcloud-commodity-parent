@@ -9,7 +9,7 @@
         <version>2.1.0.RELEASE</version>
         <relativePath/>-->
         <!-- lookup parent from repository -->
-        <groupId>com.leigq</groupId>
+        <groupId>com.leigq.commodity</groupId>
         <artifactId>commodity-parent</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
@@ -23,47 +23,10 @@
     </properties>
 
     <dependencies>
+        <!--spring-boot基础包，自己定义的-->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-        <!--lombok-->
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-        </dependency>
-
-        <!--编写更少量的代码：使用apache commons工具类库:
-        https://www.cnblogs.com/ITtangtang/p/3966955.html-->
-        <!--apache.commons.lang3-->
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
-        </dependency>
-
-        <!--你可以把这个工具看成是java.util的扩展-->
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-collections4</artifactId>
-        </dependency>
-
-        <!--apache.codec:编码方法的工具类包
-        https://blog.csdn.net/u012881904/article/details/52767853-->
-        <dependency>
-            <groupId>commons-codec</groupId>
-            <artifactId>commons-codec</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.httpcomponents</groupId>
-            <artifactId>httpclient</artifactId>
-        </dependency>
-
-        <!--commons-io-->
-        <dependency>
-            <groupId>commons-io</groupId>
-            <artifactId>commons-io</artifactId>
+            <groupId>com.leigq.common</groupId>
+            <artifactId>springboot-common</artifactId>
         </dependency>
     </dependencies>
 
