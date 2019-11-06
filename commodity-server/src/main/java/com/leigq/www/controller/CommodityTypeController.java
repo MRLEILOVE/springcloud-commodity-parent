@@ -28,7 +28,7 @@ public class CommodityTypeController {
 
     @GetMapping("/commodity_types")
     public List<CommodityType> listCommodityTypes() {
-        return null;
+        return commodityTypeService.listCommodityTypes();
     }
 
 }

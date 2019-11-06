@@ -105,4 +105,13 @@
       update_time = #{updateTime,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=BIGINT}
   </update>
+
+  <!--查询商品类型列表-->
+  <select id="listCommodityTypes" resultMap="BaseResultMap">
+        select
+          *
+        from
+          `commodity_type` as ct
+        order by ct.`update_time` desc ;
+    </select>
 </mapper>
