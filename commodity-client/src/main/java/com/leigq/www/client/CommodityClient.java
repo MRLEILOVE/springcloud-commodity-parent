@@ -1,9 +1,12 @@
 package com.leigq.www.client;
 
 import com.leigq.www.common.entity.Commodity;
+import com.leigq.www.common.vo.PostFeignTestVO;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 
 /**
  * 需要调用商品服务的接口定义
@@ -48,5 +51,13 @@ public interface CommodityClient {
      */
     @GetMapping("/commodities/{id}")
     Commodity getCommodities(@PathVariable("id") Long cId);
+
+
+    /**
+     * Feign 远程调用 POST 请求测试
+     * @param postFeignTestVO {@link PostFeignTestVO}
+     */
+    @PostMapping("/postFeignTest")
+    PostFeignTestVO postFeignTest(@RequestBody PostFeignTestVO postFeignTestVO);
 
 }

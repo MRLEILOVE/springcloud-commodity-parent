@@ -1,12 +1,9 @@
 package com.leigq.www.controller;
 
-import com.leigq.www.vo.PostFeignTestVO;
-import com.netflix.hystrix.contrib.javanica.annotation.DefaultProperties;
+import com.leigq.www.common.vo.PostFeignTestVO;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
-import com.netflix.ribbon.proxy.annotation.Hystrix;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -68,6 +65,7 @@ public class ServerController {
 
     /**
      * Feign 远程调用 POST 请求测试
+     *
      * @param postFeignTestVO {@link PostFeignTestVO}
      */
     @PostMapping("/postFeignTest")
